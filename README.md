@@ -1,2 +1,0 @@
-# cooporative
-Cooperative Management Application
