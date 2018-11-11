@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+
+    <title>Make Payments | Cooperative Management System | Staco Insurance | ERP</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+
+    <!-- Dropzone.js -->
+    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><img src="images/logo-w.jpg" width="210px" height="55px" ><!--<span> Staco Insurance</span>--></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <!--<h3>MENU</h3>-->
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                </ul>
+              </div>
+              
+              <div class="menu_section">
+                <h3>MODULES</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-steam-square"></i> Stakeholders <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="local-governments.html"><i class="fa fa-building"></i> Local Governments </a></li>
+                      <li><a href="cooperatives.html"><i class="fa fa-sitemap"></i> Cooperatives </a></li>
+                      <li><a href="members.html"><i class="fa fa-users"></i> Members </a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-calculator"></i> Premium Calculator <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="premiums/cooperatives.html"><i class="fa fa-sitemap"></i> Cooperatives </a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-users"></i> Users <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="members.html"><i class="fa fa-users"></i> All Users </a></li>
+                      <li><a href="user-new.html"><i class="fa fa-user"></i> Add New User </a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-cog"></i> Settings <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="profile.html">Profile</a></li>
+                      <li><a href="profile/edit.html"> Edit Profile</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/user.png" alt="">Ayodeji Moshood
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="profile.html"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;"><i class="fa fa-cog pull-right"></i>
+                        <!--<span class="badge bg-red pull-right">50%</span>-->
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <!--<li><a href="javascript:;">Help</a></li>-->
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3><i class="fa fa-money"></i> Payment Form <!--<small>Listing design</small>--></h3>
+              </div>
+
+              <!--<div class="title_right">
+                <button style="float: right;" type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add New</button>
+              </div>-->
+            </div>
+
+            <div class="clearfix"></div>
+
+            <br>
+
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2><i class="fa fa-money"></i> Add New Payment <!--<small>different form elements</small>--></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Cooperative Society <span class="required">* <i class="fa fa-sitemap"></i></label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <select class="select2_single form-control" tabindex="-1">
+                            <option value="">Choose..</option>
+                            <option value="Rehoboth Cooperative Multipupose Society">Rehoboth Cooperative Multipupose Society</option>
+                            <option value="Unique Ladies Saving Group">Unique Ladies Saving Group</option>
+                            <option value="Triumphant Cooperative Multipurpose Society">Triumphant Cooperative Multipurpose Society</option>
+                            <option value="Trevi Foundation Junior Staff Limited">Trevi Foundation Junior Staff Limited</option>
+                            <option value="Owodunni (Ipaja) Ctcs">Owodunni (Ipaja) Ctcs</option>
+                            <option value="Ike 0luwa Oyosowapo Mainland Cooperative Thrift Union Limited">Ike 0luwa Oyosowapo Mainland Cooperative Thrift Union Limited</option>
+                            <option value="Ikeja Staff (Alausa) CTCS">Ikeja Staff (Alausa) CTCS</option>
+                            <option value="Nepa Festac Staff CMS Limited">Nepa Festac Staff CMS Limited</option>
+                            <option value="NBC Head Office Cooperative">NBC Head Office Cooperative</option>
+                            <option value="Aseyori C.T.C.S">Aseyori C.T.C.S</option>
+                            <option value="Owolagba Co-operative Society">Owolagba Co-operative Society</option>
+                            <option value="Godwill Farmers">Godwill Farmers</option>
+                            <option value="Joint Farmers Fadama Fisherman Cooperative Society Limited">Joint Farmers Fadama Fisherman Cooperative Society Limited</option>
+                            <option value="Okota Multi Purpose Cooperative Society">Okota Multi Purpose Cooperative Society</option>
+                            <option value="Dehoni Izon Multipurpose Cooperative Society Limited">Dehoni Izon Multipurpose Cooperative Society Limited</option>
+                            <option value="Lucky Fibre Staff Coorperative Society">Lucky Fibre Staff Coorperative Society</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Payment Tip <span class="required">* <i class="fa fa-map"></i></label>
+                        <div class="col-md-6 col-sm-6 col-xs-12 form-group has-feedback">
+                          <select class="select2_single form-control" tabindex="-1">
+                            <option value="">Choose..</option>
+                            <option value="lagos">Monthly Payment</option>
+                            <option value="ogun">Loan Repayment</option>
+                          </select>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="amount-to-be-paid">Amount To Be Paid <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          <span class="fa fa-money form-control-feedback right" aria-hidden="true"></span>
+                        </div>
+                      </div>
+
+                    </form>
+
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="upload-payment-evidence">Upload Payment Evidence <span class="required">*</span></label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <form action="form_upload.html" class="dropzone"></form>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                      </div>
+                    </div>
+                  
+                  <div class="ln_solid"></div>
+
+                  <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button type="submit" class="btn btn-primary">Cancel</button>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            © 2016 Cooperative Management System. All Rights Reserved. | Developed By<a href="http://fczmedia.com"> FCzMedia™</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="../vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="../vendors/jszip/dist/jszip.min.js"></script>
+    <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Dropzone.js -->
+    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <!-- Datatables -->
+    <script>
+      $(document).ready(function() {
+        var handleDataTableButtons = function() {
+          if ($("#datatable-buttons").length) {
+            $("#datatable-buttons").DataTable({
+              dom: "Bfrtip",
+              buttons: [
+                {
+                  extend: "copy",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "csv",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "excel",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "pdfHtml5",
+                  className: "btn-sm"
+                },
+                {
+                  extend: "print",
+                  className: "btn-sm"
+                },
+              ],
+              responsive: true
+            });
+          }
+        };
+
+        TableManageButtons = function() {
+          "use strict";
+          return {
+            init: function() {
+              handleDataTableButtons();
+            }
+          };
+        }();
+
+        $('#datatable').dataTable();
+        $('#datatable-keytable').DataTable({
+          keys: true
+        });
+
+        $('#datatable-responsive').DataTable();
+
+        $('#datatable-scroller').DataTable({
+          ajax: "js/datatables/json/scroller-demo.json",
+          deferRender: true,
+          scrollY: 380,
+          scrollCollapse: true,
+          scroller: true
+        });
+
+        var table = $('#datatable-fixed-header').DataTable({
+          fixedHeader: true
+        });
+
+        TableManageButtons.init();
+      });
+    </script>
+    <!-- /Datatables -->
+  </body>
+</html>
